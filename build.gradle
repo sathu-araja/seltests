@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'org.webapp'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation group: 'org.testng', name: 'testng', version: '7.7.1'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.8.3'
+}
+
+test {
+    useJUnitPlatform()
+}
