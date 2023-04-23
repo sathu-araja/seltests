@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Practice Suite">
+    <listeners>
+        <listener class-name="com.jupiter.automation.tests.Listeners"></listener>
+    </listeners>
+    <test name="Submit Contact Form Test">
+        <classes>
+            <class name="com.jupiter.automation.tests.SubmitContactFormTest"/>
+        </classes>
+    </test> <!-- Test -->
+    <test name="Validate Contact Form Test">
+        <classes>
+            <class name="com.jupiter.automation.tests.ValidateContactFormTest"/>
+        </classes>
+    </test>
+    <test name="Buy Product By Name Test">
+        <classes>
+            <class name="com.jupiter.automation.tests.BuyProductsTest"/>
+        </classes>
+    </test> <!-- Test -->
+
+</suite> <!-- Suite -->

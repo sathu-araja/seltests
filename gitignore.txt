@@ -1,0 +1,17 @@
+**/build
+**/node_modules
+**/.gradle/
+*/**/generated/
+reports
+logs
+classes
+.idea
+**/screenshots/
+**/.classpath
+**/.project
+**/.settings
+**/bin
+*.iml
+**/nbproject
+**/screenshots
+**/target
