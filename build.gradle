@@ -17,8 +17,17 @@ dependencies {
     implementation group: 'com.aventstack', name: 'extentreports', version: '5.0.9'
 }
 
+ext{
+    //set suiteFile, default is testng.xml'
+    if (!project.hasProperty('suiteFile')) {
+        suiteFile = 'testng.xml'
+    }
+}
+
 test {
     useTestNG(){
+        dependsOn cleanTest
         useDefaultListeners = true
-        suites 'src/test/testng.xml'}
+        suites 'src/test/'+suiteFile
+        }
 }
